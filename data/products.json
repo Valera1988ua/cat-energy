@@ -1,0 +1,84 @@
+{
+   "products": [
+      {
+         "name": "Cat Energy PRO",
+         "description": "Корм со вкусом курицы",
+         "weight": "500 г",
+         "taste": "Курица",
+         "price": "100 гр.",
+         "image": "chicken.png"
+      },
+      {
+         "name": "Cat Energy PRO",
+         "description": "Корм со вкусом курицы",
+         "weight": "1000 г",
+         "taste": "Курица",
+         "price": "180 гр.",
+         "image": "chicken.png"
+      },
+      {
+         "name": "Cat Energy PRO",
+         "description": "Корм со вкусом рыбы",
+         "weight": "500 г",
+         "taste": "Риба",
+         "price": "100 гр.",
+         "image": "fish.png"
+      },
+      {
+         "name": "Cat Energy PRO",
+         "description": "Корм со вкусом рыбы",
+         "weight": "1000 г",
+         "taste": "Риба",
+         "price": "180 гр.",
+         "image": "fish.png"
+      },
+      {
+         "name": "Cat Energy SLIM",
+         "description": "Корм со вкусом гречки",
+         "weight": "500 г",
+         "taste": "Гречка",
+         "price": "100 гр.",
+         "image": "buckwheat.png"
+      },
+      {
+         "name": "Cat Energy SLIM",
+         "description": "Корм со вкусом гречки",
+         "weight": "1000 г",
+         "taste": "Гречка",
+         "price": "180 гр.",
+         "image": "buckwheat.png"
+      },
+      {
+         "name": "Cat Energy SLIM",
+         "description": "Корм со вкусом риса",
+         "weight": "500 г",
+         "taste": "Рис",
+         "price": "100 гр.",
+         "image": "rice.png"
+      },
+      {
+         "name": "Cat Energy SLIM",
+         "description": "Корм со вкусом риса",
+         "weight": "1000 г",
+         "taste": "Рис",
+         "price": "180 гр.",
+         "image": "rice.png"
+      },
+      {
+         "name": "Cat Energy PRO",
+         "description": "Корм со вкусом мяса",
+         "weight": "500 г",
+         "taste": "Мясо",
+         "price": "100 гр.",
+         "image": "meat.png"
+      },
+      {
+         "name": "Cat Energy PRO",
+         "description": "Корм со вкусом мяса",
+         "weight": "1000 г",
+         "taste": "Мясо",
+         "price": "180 гр.",
+         "image": "meat.png"
+      }
+   ]
+}

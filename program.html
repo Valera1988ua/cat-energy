@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Cat Energy - Подбор программы</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0; visibility: hidden;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230810233600">
+	<link rel="icon" href="favicon.ico" sizes="any">
+	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header_white">
+			<div class="header__container">
+				<div class="header__top top-header">
+					<a href="index.html" class="top-header__logo"><img src="img/logo-desktop.svg" alt="Лого"></a>
+					<a href="index.html" class="top-header__logo-mobile">
+						<img src="img/header/logo-mobile.svg" alt="Лого">
+						<img src="img/header/logo-mobile-text.svg" alt="Лого">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+								<li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
+								<li class="menu__item"><a href="program.html" class="menu__link">Подбор программы</a></li>
+							</ul>
+						</nav>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="program">
+			<section class="program__form">
+				<div class="program__container">
+					<h1 class="program__title title title_big">Подбор программы</h1>
+					<h3 class="program__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
+				</div>
+				<form action="#" class="program__form form" data-dev method="POST" data-goto-error data-popup-message="#form-message">
+					<div class="form__top form__container">
+						<div class="form__cat">
+							<div class="form__item">
+								<label for="catName">ИМЯ:*</label>
+								<input class="form__input" type="text" name="form[]" id="catName" data-required="name" placeholder="барсик" data-validate aria-labelledby="Имя Вашего кота">
+							</div>
+							<div class="form__item">
+								<label for="catWeight">Вес (кг):*</label>
+								<input class="form__input" type="number" name="form[]" id="catWeight" data-required="weight" data-validate placeholder="7" aria-labelledby="Вес Вашего кота">
+							</div>
+							<div class="form__item">
+								<label for="catAge">Возраст (лет):</label>
+								<input class="form__input" type="text" name="form[]" id="catAge" placeholder="7" aria-labelledby="Возраст Вашего кота">
+							</div>
+						</div>
+						<div class="form__radio options">
+							<div class="form__item options__item">
+								<input class="form__radio options__input" type="radio" name="form[]" id="weightLoss">
+								<label class="options__label" for="weightLoss"></label>
+								<div class="options__text">похудение</div>
+							</div>
+							<div class="form__item  options__item">
+								<input class="form__radio options__input" type="radio" name="form[]" id="weightGain">
+								<label class="options__label" for="weightGain"></label>
+								<div class="options__text">набор массы</div>
+							</div>
+							<div class="form__item  options__item">
+								<input class="form__radio options__input" type="radio" name="form[]" id="advice">
+								<label class="options__label" for="advice"></label>
+								<div class="options__text">Не знаю (Нужен ваш совет)</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__decor">
+						<div class="form__line form__line_decor"></div>
+						<div class="form__container">
+							<h2 class="form__title form__title_decor">Контактные данные (владельца кота)</h2>
+						</div>
+					</div>
+					<div class="form__contact form__container">
+						<div class="form__item">
+							<label for="email">E-mail:*</label>
+							<input class="form__input" autocomplete="on" type="email" name="form[]" id="email" data-required="email" placeholder="yourEmail@mail.com" data-validate aria-labelledby="Ваш email">
+						</div>
+						<div class="form__item">
+							<label for="phone">Телефон:*</label>
+							<input class="form__input" autocomplete="on" type="tel" name="form[]" id="phone" data-required="phone" placeholder="+3(___)___-__-__" data-validate aria-labelledby="Ваш телефон">
+						</div>
+					</div>
+					<div class="form__decor">
+						<div class="form__line"></div>
+						<div class="form__container">
+							<h2 class="form__title">Комментарий</h2>
+						</div>
+					</div>
+					<div class="form__comment form__container">
+						<div class="form__item">
+							<textarea class="form__input" data-autoheight data-autoheight-min='174' data-autoheight-max='250' autocomplete="off" name="form[]" placeholder="Расскажите обо всех повадках кота"></textarea>
+						</div>
+					</div>
+					<div class="form__decor">
+						<div class="form__line"></div>
+						<div class="form__container">
+							<h2 class="form__title">Дополнительно</h2>
+						</div>
+					</div>
+					<div class="form__additionally form__container">
+						<div class="form__item checkbox">
+							<input class="form__checkbox checkbox__input" type="checkbox" name="form[]" id="sweetener">
+							<label class="checkbox__label" for="sweetener"></label>
+							<div class="checkbox__text">сахарозаменитель</div>
+						</div>
+						<div class="form__item checkbox">
+							<input class="form__checkbox checkbox__input" type="checkbox" name="form[]" id="water">
+							<label class="checkbox__label" for="water"></label>
+							<div class="checkbox__text">питьевая вода</div>
+						</div>
+						<div class="form__item checkbox">
+							<input class="form__checkbox checkbox__input" type="checkbox" name="form[]" id="milk">
+							<label class="checkbox__label" for="milk"></label>
+							<div class="checkbox__text">молоко</div>
+						</div>
+						<div class="form__item checkbox">
+							<input class="form__checkbox checkbox__input" type="checkbox" name="form[]" id="vitamins">
+							<label class="checkbox__label" for="vitamins"></label>
+							<div class="checkbox__text">витамины</div>
+						</div>
+					</div>
+					<div class="form__submit form__container">
+						<button type="submit" class="form__button link-button">отправить заявку</button>
+						<div class="form__text text">* — Обязательные поля</div>
+					</div>
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__items">
+					<a href="index.html" class="footer__logo_footer"><img src="img/header/logo-mobile-text.svg" alt="Лого"></a>
+					<div class="footer__social social">
+						<a href="#" class="social__icon">
+							<img src="img/icons/instagram.svg" alt="Instagram">
+						</a>
+						<a href="#" class="social__icon">
+							<img src="img/icons/facebook.svg" alt="Facebook">
+						</a>
+					</div>
+					<div class="footer__label label">
+						<div class="label__text text">HTML Academy</div>
+						<div class="label__icon">
+							<img src="img/icons/html.svg" alt="HTML icon">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="form-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" aria-label="Закрыть модальное окно" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__text">Спасибо за заявку!Мы с Вами свяжемся.</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="js/app.min.js?_v=20230810233600"></script>
+</body>
+
+</html>

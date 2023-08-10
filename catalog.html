@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Cat Energy - Каталог товаров</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0; visibility: hidden;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230810233600">
+	<link rel="icon" href="favicon.ico" sizes="any">
+	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header_white">
+			<div class="header__container">
+				<div class="header__top top-header">
+					<a href="index.html" class="top-header__logo"><img src="img/logo-desktop.svg" alt="Лого"></a>
+					<a href="index.html" class="top-header__logo-mobile">
+						<img src="img/header/logo-mobile.svg" alt="Лого">
+						<img src="img/header/logo-mobile-text.svg" alt="Лого">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+								<li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
+								<li class="menu__item"><a href="program.html" class="menu__link">Подбор программы</a></li>
+							</ul>
+						</nav>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="catalog">
+			<section class="catalog__products products">
+				<div class="products__container">
+					<h1 class="products__title title title_big">Каталог продукции</h1>
+					<div class="products__catalog catalog-products"></div>
+				</div>
+			</section>
+			<section class="catalog__additional-goods additional-goods">
+				<div class="additional-goods__line"></div>
+				<div class="additional-goods__container">
+					<h2 class="additional-goods__title title">Дополнительные товары</h2>
+					<div class="additional-goods__content">
+						<table class="additional-goods__table">
+							<tbody>
+								<tr>
+									<td>Сахарозаменитель</td>
+									<td>1 упаковка (100 г)</td>
+									<td>20 гр.</td>
+									<td><button type="button" class="additional-goods__button link-button">заказать</button></td>
+								</tr>
+								<tr>
+									<td>Питьевая вода</td>
+									<td>5 литров</td>
+									<td>30 гр.</td>
+									<td><button type="button" class="additional-goods__button link-button">заказать</button></td>
+								</tr>
+								<tr>
+									<td>Молоко</td>
+									<td>1 литр</td>
+									<td>40 гр.</td>
+									<td><button type="button" class="additional-goods__button link-button">заказать</button></td>
+								</tr>
+								<tr>
+									<td>Витамины</td>
+									<td>1 упаковка (30 г)</td>
+									<td>300 гр.</td>
+									<td><button type="button" class="additional-goods__button link-button">заказать</button></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="additional-goods__image">
+							<picture><source srcset="img/catalog/block.webpt.webp" type="image/webp"><img src="img/catalog/block_gift.png" alt="Картинка подарка"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog__map map">
+				<div class="map__item item-map">
+					<div class="item-map__text">приглашаем к сотрудничеству дилеров!</div>
+					<address class="item-map__adress text">
+						ул.Название улицы д. 10 , Днепр
+					</address>
+				</div>
+				<div id="map" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169325.1486166384!2d34.83554955047239!3d48.46218085069478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdC10L_RgCwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1689104671366!5m2!1sru!2sua">
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__items">
+					<a href="index.html" class="footer__logo_footer"><img src="img/header/logo-mobile-text.svg" alt="Лого"></a>
+					<div class="footer__social social">
+						<a href="#" class="social__icon">
+							<img src="img/icons/instagram.svg" alt="Instagram">
+						</a>
+						<a href="#" class="social__icon">
+							<img src="img/icons/facebook.svg" alt="Facebook">
+						</a>
+					</div>
+					<div class="footer__label label">
+						<div class="label__text text">HTML Academy</div>
+						<div class="label__icon">
+							<img src="img/icons/html.svg" alt="HTML icon">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230810233600"></script>
+</body>
+
+</html>
