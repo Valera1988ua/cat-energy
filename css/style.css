@@ -738,8 +738,9 @@ body::after {
 
 .items-mass__link {
   text-transform: uppercase;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
 }
 
 .items-mass__link span {
