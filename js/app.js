@@ -3782,7 +3782,7 @@
         };
         __webpack_require__(125);
         const inputMasks = document.querySelectorAll('input[type="tel"]');
-        if (inputMasks.length) modules_moduleRegistry.inputmask = Inputmask("+3(999)999-99-99").mask(inputMasks);
+        if (inputMasks.length) modules_moduleRegistry.inputmask = Inputmask("+3(099)999-99-99").mask(inputMasks);
         __webpack_require__(2);
         let addWindowScrollEvent = false;
         setTimeout((() => {

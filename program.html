@@ -5,19 +5,13 @@
 	<title>Cat Energy - Подбор программы</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>
-      body {
-         opacity: 0;
-         visibility: hidden;
-      }
-   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230813144808">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230813151247">
 	<link rel="icon" href="favicon.ico" sizes="any">
 	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
+	<meta name="description" content="Интернет магазин Сat Energy">
 </head>
 
 <body>
@@ -54,15 +48,15 @@
 						<div class="form__cat">
 							<div class="form__item">
 								<label for="catName">ИМЯ:*</label>
-								<input class="form__input" type="text" name="form[]" id="catName" data-required="name" placeholder="барсик" data-validate aria-labelledby="Имя Вашего кота">
+								<input class="form__input" type="text" name="form[]" id="catName" data-required="name" placeholder="барсик" data-validate aria-label="Имя Вашего кота">
 							</div>
 							<div class="form__item">
 								<label for="catWeight">Вес (кг):*</label>
-								<input class="form__input" type="number" name="form[]" id="catWeight" data-required="weight" data-validate placeholder="7" aria-labelledby="Вес Вашего кота">
+								<input class="form__input" type="number" name="form[]" id="catWeight" data-required="weight" data-validate placeholder="7" aria-label="Вес Вашего кота">
 							</div>
 							<div class="form__item">
 								<label for="catAge">Возраст (лет):</label>
-								<input class="form__input" type="number" name="form[]" id="catAge" placeholder="7" aria-labelledby="Возраст Вашего кота">
+								<input class="form__input" type="number" name="form[]" id="catAge" placeholder="7" aria-label="Возраст Вашего кота">
 							</div>
 						</div>
 						<div class="form__radio options">
@@ -92,11 +86,11 @@
 					<div class="form__contact form__container">
 						<div class="form__item">
 							<label for="email">E-mail:*</label>
-							<input class="form__input" autocomplete="on" type="email" name="form[]" id="email" data-required="email" placeholder="yourEmail@mail.com" data-validate aria-labelledby="Ваш email">
+							<input class="form__input" autocomplete="on" type="email" name="form[]" id="email" data-required="email" placeholder="yourEmail@mail.com" data-validate aria-label="Ваш email">
 						</div>
 						<div class="form__item">
 							<label for="phone">Телефон:*</label>
-							<input class="form__input" autocomplete="on" type="tel" name="form[]" id="phone" data-required="phone" placeholder="+3(___)___-__-__" data-validate aria-labelledby="Ваш телефон">
+							<input class="form__input" autocomplete="on" type="tel" name="form[]" id="phone" data-required="phone" placeholder="+3(___)___-__-__" data-validate aria-label="Ваш телефон">
 						</div>
 					</div>
 					<div class="form__decor">
@@ -139,7 +133,8 @@
 						</div>
 					</div>
 					<div class="form__submit form__container">
-						<button type="submit" class="form__button link-button">отправить заявку</button>
+						<button type="submit" class="form__button link-button" aria-label="Отправить заявку">отправить
+							заявку</button>
 						<div class="form__text text">* — Обязательные поля</div>
 					</div>
 				</form>
@@ -176,7 +171,6 @@
 				<div class="popup__text">Спасибо за заявку!Мы с Вами свяжемся.</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	<style>
 		.lock body {
@@ -275,7 +269,7 @@
 			preloader();
 		</script>
 	</div>
-	<script src="js/app.min.js?_v=20230813144808"></script>
+	<script src="js/app.min.js?_v=20230813151247"></script>
 </body>
 
 </html>
