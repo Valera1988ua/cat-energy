@@ -5,8 +5,13 @@
 	<title>Cat Energy - Интернет магазин питания для кошек</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0; visibility: hidden;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230810233600">
+	<!-- <style>
+      body {
+         opacity: 0;
+         visibility: hidden;
+      }
+   </style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230813144808">
 	<link rel="icon" href="favicon.ico" sizes="any">
 	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -206,7 +211,104 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230810233600"></script>
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: opacity 0.5s ease 0s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="preloader">
+		<!-- Стилі для прелоадера -->
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			/* Головний блок */
+			.preloader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #fff;
+				z-index: 149;
+				opacity: 1;
+				visibility: visible;
+				transition: all 0.5s;
+			}
+
+			.preloader__loader {
+				width: 5rem;
+				height: 5rem;
+				border-radius: 50%;
+				border: 0.8rem solid #dcdcdc;
+				border-top-color: #68B738;
+				animation: spin 1s infinite linear;
+			}
+
+			.preloader._done {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			@keyframes spin {
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+		<script>
+			function preloader() {
+				const preloaderContainer = document.querySelector('#preloader');
+				const preloaderTemplate = `
+					<div class="preloader">
+						<div class="preloader__loader"></div>
+					</div>`;
+				document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
+				const preloader = document.querySelector('.preloader');
+				document.documentElement.classList.add('loading');
+				document.documentElement.classList.add('lock');
+				window.addEventListener('load', () => {
+					if (!preloader.classList.contains('_done')) {
+						preloader.classList.add('_done')
+					}
+					setTimeout(() => {
+						document.documentElement.classList.add('loaded');
+						document.documentElement.classList.remove('loading');
+						document.documentElement.classList.remove('lock');
+						preloader.remove();
+						preloaderContainer.remove();
+					}, 500)
+				})
+			}
+			preloader();
+		</script>
+	</div>
+	<script src="js/app.min.js?_v=20230813144808"></script>
 </body>
 
 </html>
